@@ -6,9 +6,9 @@ import os
 
 class SimpleStrategy:
     def __init__(self):
-        self.exchange = ccxt.coincheck({
-            'apiKey': os.getenv("COINCHECK_API_KEY"),
-            'secret': os.getenv("COINCHECK_API_SECRET"),
+        self.exchange = ccxt.binance({
+            'apiKey': os.getenv("BINANCE_API_KEY"),
+            'secret': os.getenv("BINANCE_API_SECRET"),
             'enableRateLimit': True
         })
 
@@ -29,9 +29,9 @@ class SimpleStrategy:
 
 class MomentumStrategy:
     def __init__(self):
-        self.exchange = ccxt.coincheck({
-            'apiKey': os.getenv("COINCHECK_API_KEY"),
-            'secret': os.getenv("COINCHECK_API_SECRET"),
+        self.exchange = ccxt.binance({
+            'apiKey': os.getenv("BINANCE_API_KEY"),
+            'secret': os.getenv("BINANCE_API_SECRET"),
             'enableRateLimit': True
         })
 
@@ -53,9 +53,9 @@ class MomentumStrategy:
 
 class EMARSIComboStrategy:
     def __init__(self):
-        self.exchange = ccxt.coincheck({
-            'apiKey': os.getenv("COINCHECK_API_KEY"),
-            'secret': os.getenv("COINCHECK_API_SECRET"),
+        self.exchange = ccxt.binance({
+            'apiKey': os.getenv("BINANCE_API_KEY"),
+            'secret': os.getenv("BINANCE_API_SECRET"),
             'enableRateLimit': True
         })
 
