@@ -1,0 +1,11 @@
+
+ccxt
+pandas
+numpy
+backtrader
+fastapi
+uvicorn
+python-dotenv
+psycopg2-binary
+redis
+celery
